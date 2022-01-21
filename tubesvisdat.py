@@ -109,4 +109,7 @@ y_select.on_change('value', update_plot)
 layout = row(widgetbox(slider, x_select, y_select), plot)
 curdoc().add_root(layout)
 
-# bokeh serve --show myapp.py
+# bokeh serve --show TubesVisdat.py
+!pip freeze > requirements.txt
+
+curdoc().clear()
